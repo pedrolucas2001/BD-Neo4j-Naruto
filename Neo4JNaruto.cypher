@@ -1,6 +1,10 @@
 CREATE
 //Criando nós e relações entre clãs 
 
+//Vila da Folha
+(Vila_Da_Folha: Vila{info:"Onde fica a Vila da Folha? Situada no País do Fogo, Konoha, ou também conhecida como Vila da Folha, é o lar dos principais personagens e acontecimentos da história original de Naruto.", nome: "Vila da Folha" }),
+
+
 //Clã Ōtsutsuki
 (Cla_Otsutsuki:Cla{info:"O Clã Ōtsutsuki é um clã originário de outro mundo, tendo chegado à Terra cerca de mil anos atrás, sendo composto por seres celestiais com chifres. Vários membros deste clã têm fortemente influenciado tanto os shinobi, e o mundo em geral com suas ações, resultando no mundo em que conhecemos hoje. São indivíduos extraordinários, capazes de viver até em ambientes inabitáveis para pessoas comuns, como a Lua. Eles são também progenitores de notáveis clãs como os Senju, Uzumaki, Uchiha, Hyūga e Kaguya. Eles também são os criadores das marionetes.",nome:"Clã Ōtsutsuki"}),
 (Kaguya:Deus{info:"A princesa Kaguya Ōtsutsuki é a matriarca do clã Ōtsutsuki e mãe de Hagoromo Ōtsutsuki e Hamura Ōtsutsuki, que viveu muito antes da fundação das aldeias ocultas, durante uma era de guerras intermináveis entre a humanidade. Ela consumiu o fruto da Árvore Divina e se tornou a progenitora do chakra, além de fazer parte da criação da besta que se tornaria conhecida como Dez-Caudas.",nome:"Kaguya Ōtsutsuki"}),
@@ -49,11 +53,7 @@ CREATE
 (Madara)-[:LIDER]->(Cla_Uchiha),
 
 //Outros membros do Clã Senju
-<<<<<<< HEAD
-(Tobirama:Kage{info:"Tobirama Senju foi o Segundo Hokage de Konoha. Ele vem do clã Senju, que, junto com o clã Uchiha, fundaram a primeira vila shinobi. Tobirama também viria a ser o líder do seu próprio time. Antes de herdar a posição de Hokage, ele serviu como conselheiro de seu irmão ajudando-o com medidas políticas e sociais.",nome:"Tobirama Senju"}),
-=======
 (Tobirama:Kage{info:"Tobirama Senju foi o Segundo Hokage (Nidaime Hokage; literalmente significa: 'Segunda Sombra do Fogo' de Konoha. Ele vem do clã Senju, que, junto com o clã Uchiha, fundaram a primeira vila shinobi. Tobirama também viria a ser o líder do seu próprio time. Antes de herdar a posição de Hokage, ele serviu como conselheiro de seu irmão ajudando-o com medidas políticas e sociais.",nome:"Tobirama Senju"}),
->>>>>>> d017c887344cde2c646a37b9009301ae6c5f874a
 (Tsunade:Kage{info:"Tsunade é uma dos Sannin Lendários de Konoha. Embora seja considerada a kunoichi mais forte do mundo e a maior ninja médica, Tsunade abandonou a vida de shinobi por muitos anos em busca de outros objetivos. Ela acaba sendo convencida a voltar para Konoha e se torna a Quinta Hokage, onde ela usa sua força para reprimir os inimigos da vila e seu conhecimento médico para manter os moradores a salvo. Eventualmente, ela renuncia de seu cargo e passa sua posição para Kakashi Hatake.",nome:"Tsunade"}),
 
 //Relações do Clã Senju
@@ -90,7 +90,6 @@ CREATE
 
 //Clã Uzumaki
 (Cla_Uzumaki:Cla{info:"O clã Uzumaki é descendente de Asura Otsutsuki, um dos filhos de Rikuudou Sennin, e compartilha uma relação de sangue com o clã Senju. Isso porque, durante anos, os dois clãs eram muito unidos e ocorriam casamentos entre seus membros. Após a fundação de Konoha (Vila da Folha), os shinobis do clã Senju decidiram integrar o símbolo do clã Uzumaki em seus uniformes e coletes, de forma a homenagear sua amizade com a aldeia vizinha. A ligação entre os dois clãs era tão forte que, até aos dias de hoje, eles continuam usando os mesmos símbolos, mesmo após a destruição de Uzushiogakure (Vila do Redemoinho). Uzushiogakure, conhecida como a Vila dos Redemoinhos, ganhou fama tanto por seus cidadãos dominarem a arte dos fuinjutsus, como também por terem uma vida especialmente longa. Claro que isso incitou invejas e medos, levando algumas das outras nações do mundo a se juntarem para destruir a vila, a qual acreditavam ser demasiado poderosa para continuar a existir. Com a destruição de sua terra natal, os sobreviventes do clã tiveram que fugir e se esconder pelo mundo.",nome:"Clã Uzumaki"}),
-<<<<<<< HEAD
 (Naruto:Genin{info:"Naruto Uzumaki é um shinobi de Konohagakure do clã Uzumaki e protagonista homônimo da franquia Naruto. Desde seu nascimento, ele se tornou jinchuuriki das Nove-Caudas, um destino que o levou a ser condenado e negligenciado por toda a aldeia durante sua infância. Depois de entrar para o Time 7, ao lado de Sakura Haruno, Sasuke Uchiha e sob comando de Kakashi Hatake, Naruto trabalhou duro para ganhar o respeito e o reconhecimento da aldeia, com o sonho de se tornar Hokage. Nos anos seguintes, Naruto passa a ser um ninja reconhecido pela aldeia, que é eventualmente considerado como um herói pelas pessoas, e mais tarde, pelo mundo shinobi em geral, renomado como o Herói da Vila Oculta da Folha. Posteriormente, Naruto descobre ser a reencarnação do espírito de Ashura e anos depois da Quarta Guerra Mundial Shinobi, Naruto realiza seu sonho e se torna o Sétimo Hokage.",nome:"Naruto"}),
 (Nagato:Renegado{info:"Nagato foi um shinobi de Amegakure (Vila oculta da Chuva) descendente do clã Uzumaki. Órfão pelos conflitos da Segunda Guerra Mundial Shinobi, Nagato se uniu de seus companheiros órfãos de guerra, Yahiko e Konan, para formar a Akatsuki, uma organização cujo objetivo era cessar os ciclos infinitos de ódio e morte. Nagato sonhava em trazer paz ao mundo violento dos shinobi. Os três foram alunos de Jiraiya durante três anos, nos quais o Sannin ensinou ninjutsu a eles para que sustentassem seus objetivos, protegessem uns aos outros e para que Nagato controlasse seus poderes, uma vez que ele possuia o Rinnegan, os olhos do Eremita dos Seis Caminhos. Depois de seu melhor amigo e líder, Yahiko, ser traído e morto por pregar a paz, Nagato se convenceu de que o mundo nunca iria parar de lutar voluntariamente a menos que ele conhecesse o que é a verdadeira dor. Por conta disso, ele adotou o pseudônimo de Pain e se tornou o novo líder da Akatsuki na tentativa de mudar o mundo para um estado de paz através do medo da destruição pelas mãos da Akatsuki. No fim de sua vida, Nagato se choca com Naruto Uzumaki, seu 'irmão de mestre', que o convence a apostar em um futuro onde as pessoas são capazes de entender umas as outras sem ser através da dor, passando adiante a Naruto seu desejo pela paz.",nome:"Nagato"}),
 (Karin:Genin{info:"Karin é uma subordinada de Orochimaru, uma ex-kunoichi de Kusagakure(Vila Oculta da Grama), e um membro do clã Uzumaki. Ela ajudou Orochimaru em seus experimentos, e foi deixada no comando de seu Esconderijo do Sul enquanto ele estava fora. Mais tarde, ela foi recrutada para a equipe de Sasuke Uchiha, Taka, que inicialmente foi chamada de 'Hebi' no momento de sua criação, como a ninja sensorial e a curadora do grupo.",nome:"Karin"}),
@@ -104,11 +103,8 @@ CREATE
 (Kushina)-[:PERTENCE_A]->(Cla_Uzumaki),
 (Kushina)-[:MAE]->(Naruto),
 (Naruto)-[:FILHO]->(Kushina),
-=======
->>>>>>> d017c887344cde2c646a37b9009301ae6c5f874a
 
-//Vila da Folha
-(Vila_Da_Folha: Vila{info:"Onde fica a Vila da Folha? Situada no País do Fogo, Konoha, ou também conhecida como Vila da Folha, é o lar dos principais personagens e acontecimentos da história original de Naruto.", nome: "Vila da Folha" }),
+
 
 
 //Clã Hatake
@@ -239,7 +235,7 @@ CREATE
 (Kiba)-[:PERTENCE_A]->(Cla_Inuzuka),
 (Akamaru)-[:PERTENCE_A]->(Cla_Inuzuka),
 (Kiba)-[:DONO]->(Akamaru),
-(Akamaru)-[:MASCOTE]->(Kiba)
+(Akamaru)-[:MASCOTE]->(Kiba),
 
 //Akatsuki
 (Pain: Grupo{info:"Os Seis Caminhos de Pain foram um grupo criado por Nagato para compensar a deficiência de mobilidade causada por Hanzō em suas pernas e se tornado ainda mais frágil pelos inúmeros bastões de chakra encravados em suas costas pela Estátua Demoníaca do Caminho Exterior. Após a morte de Nagato, Tobi replica o método de Nagato e cria seus próprios Seis Caminhos de Pain para a Quarta Guerra Mundial Ninja.", nome: "Caminhos Pain" }),
@@ -250,7 +246,7 @@ CREATE
 (Zetsu:  Renegado{info:"Zetsu foi criado a partir da vontade de Kaguya Ōtsutsuki para garantir seu renascimento. Ele é o cérebro por trás de muitos dos eventos que moldaram a história shinobi.", nome: "Zetsu" }),
 (Sasori: Renegado{info:"Sasori era um shinobi de Sunagakure e que se juntou a Akatsuki, onde foi parceiro de Orochimaru e Deidara, respectivamente.", nome: "Sasori" }),
 (Konan: Renegado{info:"Konan foi uma kunoichi de Amegakure e um membro da Akatsuki. Ela foi uma parceira de Nagato, e foi o único membro a chamá-lo pelo nome. Após a morte de Nagato, ela desertou da organização e se tornou a líder de Amegakure antes de sua própria morte.", nome: "Konan" }),
-(Kismame: Renegado{info:"Kisame  foi um nukenin de Rank S que fazia parte dos Sete Espadachins da Névoa de Kirigakure e foi parceiro de Itachi Uchiha dentro da organização Akatsuki.", nome: "Kisame" }),
+(Kisame: Renegado{info:"Kisame  foi um nukenin de Rank S que fazia parte dos Sete Espadachins da Névoa de Kirigakure e foi parceiro de Itachi Uchiha dentro da organização Akatsuki.", nome: "Kisame" }),
 (Dupla_Sasori_Deidara: Dupla{info:"Ja chegaram a enfrentar orochimaru em combate juntos", nome: "Dupla Sasori e Deidara" }),
 (Dupla_Kakuzu_Hidan: Dupla{info:"Lutaram contra Asuma e posteriormente enfrentaram o time 7 de Kakashi Hatake", nome: "Dupla Kakuzu e Hidan" }),
 (Dupla_Kisame_Itachi: Dupla{info:"Lutaram contra Asuma, Kurenai, Gai e Kakashi na vila de Konoha", nome: "Dupla Kisame e Itachi" }),
@@ -263,7 +259,7 @@ CREATE
 (Zetsu) -[:MEMBRO]-> (Akatsuki),
 (Sasori) -[:MEMBRO]-> (Akatsuki),
 (Konan) -[:MEMBRO]-> (Akatsuki),
-(Kismame) -[:MEMBRO]-> (Akatsuki),
+(Kisame) -[:MEMBRO]-> (Akatsuki),
 (Itachi) -[:MEMBRO]-> (Akatsuki),
 (Itachi) -[:FORMA]-> (Dupla_Kisame_Itachi),
 (Kisame) -[:FORMA]-> (Dupla_Kisame_Itachi),
@@ -282,4 +278,4 @@ CREATE
 //Relações Sannins Lendários
 (Jiraiya) -[:PERTENCE_A]-> (Sannins_Lendarios),
 (Orochimaru) -[:PERTENCE_A]-> (Sannins_Lendarios),
-(Tsunade) -[:PERTENCE_A]-> (Sannins_Lendarios),
+(Tsunade) -[:PERTENCE_A]-> (Sannins_Lendarios)
